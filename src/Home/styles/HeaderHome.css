@@ -1,0 +1,19 @@
+/* HeaderHome.css */
+.header-home {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: var(--while-color);
+    height: 70px;
+  }
+  .header-home > * {
+    flex: 0 1 auto;
+  }
+  .header-home > * {
+    flex: 0 1 auto; /* Các phần tử không thay đổi kích thước tự động */
+  }
+  
+  
+  

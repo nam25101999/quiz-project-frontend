@@ -1,0 +1,403 @@
+
+  
+  .body_login {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login_form{
+    background-color: #222222;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .form_login{
+    display: flex;
+    background: var(--black-color);
+    border-radius: 27px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    margin-top: 75px;
+    padding: 40px;
+  }
+  
+  .form_left{
+    width: 100%;
+  }
+  
+  .form_right{
+    width: 100%;
+
+  }
+
+  /* Tiêu đề Đăng nhập */
+  .login_text {
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: var(--while-color);
+    margin-bottom: 1.5rem;
+    font-weight: 250;
+  }
+
+  .login_textf{
+    color: var(--while-color);
+    font-size: 1.5rem;
+    font-weight: 150;
+    padding: 10px 0;
+  }
+  .logo_img {
+    width: 100px;
+    height: auto;
+  }
+  .text{
+    color: var(--while-color);
+  }
+  .login_input{
+    margin-top: 70px;
+    width: 380px;
+    height: 50px;
+    background-color: var(--black-color);
+    border: var(--while-color) solid 1px;
+    color: var(--while-color);
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form_text {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .login_input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .login_input:focus {
+    border-color: var(--primary-color);
+  }
+  
+  .floating_label {
+    position: absolute;
+    left: 15px;
+    top: 73%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .login_input:focus + .floating_label,
+  .floating_label.active {
+    top: 70px;
+    left: 10px;
+    font-size: 1.3rem ;
+    color: var(--primary-color);
+    background-color: var(--black-color);
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+
+  .text_account{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  .text_account:hover{
+    background-color: #555;
+    border-radius: 5px;
+    padding: 2px;
+  }
+
+  .text_learnmore{
+    font-size: 1.4rem;
+    padding: 40px 0;
+    color: var(--while-color);
+    font-weight: 200;
+    line-height: 1.5;
+  }
+
+  .text_learnmore_a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .text_learnmore_a:hover{
+    text-decoration: underline;
+  }
+  .buttons{
+    display: flex;
+    float: right;
+  }
+  .button_next{
+    width: 110px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--while-color);
+    
+  }
+
+  .button_next:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+  .button_register{
+    width: 120px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    margin-right: 25px;
+    background-color:  transparent;
+    border: none;
+    cursor: pointer;
+    color:var(--primary-color);
+  }
+
+  .button_register:hover {
+    background-color: #222222; 
+}
+
+
+
+
+  /* Các nhãn văn bản */
+  .form_text label,
+  .form_password label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.8rem;   
+    margin-bottom: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  /* Nút Đăng nhập */
+  .login_button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login_button:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .login_button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .login_help{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--while-color);
+  }
+  /* Xóa khung, nền và tùy chỉnh */
+  .language {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  #languageSelector {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white; /* Văn bản màu trắng */
+    appearance: none; /* Loại bỏ giao diện mặc định */
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Chrome/Safari */
+
+  }
+  
+
+  .content_help{
+    display: flex;
+  }
+  .help_list{
+    margin-top:25px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .help_item{
+    margin: 0 20px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .help_item:hover {
+    background-color: #454545;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .error-container,
+  .message-container{
+    color: red;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .error-container i, .message-container i {
+    margin-right: 8px;
+  }
+
+.user_info{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user_avatar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin: 0 10px 0 0;
+  
+}
+.user_name{
+  font-size: 4rem;
+  color: var(--while-color);
+  margin: 0;
+  padding: 15px 0;
+  width: 100%;
+  
+}
+.my_info{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--while-color);
+  border-radius: 25px;
+  margin: 15px 0;
+  padding: 3px;
+}
+.user_email{
+  color: var(--while-color);
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+.form_password {
+  position: relative;
+  margin-top: 20px;
+}
+
+.password_input {
+  margin-top: 100px;
+  width: 380px;
+  height: 50px;
+  background-color: var(--black-color);
+  border: var(--while-color) solid 1px;
+  color: var(--while-color);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.password_input:focus {
+  border-color: var(--primary-color);
+}
+
+.floating_label_password {
+  position: absolute;
+  left: 15px;
+  top: 78%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.password_input:focus + .floating_label_password,
+.floating_label_password.active {
+  top: 62%;
+  left: 10px;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  background-color: var(--black-color);
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.show_password_checkbox {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.show_password_checkbox input {
+  margin-right: 10px;
+}
+
+.show_password_checkbox label {
+  font-size: 1.4rem;
+  color: var(--while-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.show_password_checkbox label:hover {
+  color: var(--primary-color);
+}
+
+.button_password{
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  margin-right: 25px;
+  background-color:  transparent;
+  border: none;
+  cursor: pointer;
+  color:var(--primary-color);
+}
+
+.button_password:hover {
+  background-color: #222222; 
+}
+.buttons2{
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: right;
+}

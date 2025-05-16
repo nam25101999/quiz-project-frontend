@@ -1,0 +1,200 @@
+.register_form{
+  background-color: #222222;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.register-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  
+}
+
+/* Form đăng ký */
+.register-form {
+  display: flex;
+  background: var(--black-color);
+  border-radius: 27px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+  min-height: 60vh;
+}
+
+/* Một bước trong form */
+.register-step-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.register-step-left {
+  width: 40%; /* Chiếm 40% chiều rộng */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.register-step-logo {
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: var(--while-color);
+  margin-bottom: 1.5rem;
+  font-weight: 250;
+}
+
+.register-step-right {
+  width: 55%; /* Chiếm 55% chiều rộng */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_img {
+  width: 100px;
+  height: auto;
+}
+
+/* Thêm margin cho các label và input */
+.register-step-right label {
+  font-size: 1.1rem;
+  color: var(--while-color);
+  margin-top: 15px;
+  display: block;
+}
+
+.register-step-input,
+.register-step-select {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--black-color);
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+/* Nút điều hướng */
+.register-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.register-button {
+  width: 110px;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--while-color);
+}
+
+.register-button:hover {
+  background-color: var(--primary-color-rgba);
+}
+
+/* Nút riêng biệt */
+.register-button-back {
+  background-color: #6c757d;
+}
+
+.register-button-back:hover {
+  background-color: #5a6268;
+}
+
+.register-button-next {
+  background-color: var(--primary-color);
+}
+
+.register-button-next:hover {
+  background-color: var(--primary-color-rgba);
+}
+
+.register-button-submit {
+  background-color: #28a745;
+}
+
+.register-button-submit:hover {
+  background-color: #218838;
+}
+
+/* Thông báo */
+.register-message {
+  color: rgb(28, 223, 57);
+  font-size: 19px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Hiển thị mật khẩu */
+.register-password-visibility {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.register-password-visibility input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.register-password-visibility label {
+  font-size: 14px;
+  color: var(--while-color);
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .register-container {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .register-form {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .register-step-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .register-step-left,
+  .register-step-right {
+      width: 100%;
+  }
+
+  .register-step-logo {
+      font-size: 2.5rem;
+  }
+
+  .register-step-right label,
+  .register-step-input,
+  .register-step-select {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .register-button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .register-message {
+      font-size: 12px;
+  }
+}

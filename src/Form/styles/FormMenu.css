@@ -1,0 +1,63 @@
+
+.menu-container {
+    position: fixed;
+    top: 25%;
+    right: 14.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #f8f9fa;
+    width: 50px;
+    min-height: 250px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    border-radius: 8px;
+  }
+  
+  /* Style cho các nút */
+  .formmenu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 18px;
+    margin: 2px 0;
+    border-radius: 50%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .formmenu-button:hover{
+    background-color: var(--primary-color-rgba);
+  }
+  .formmenu_icon{
+    font-size: 1.8rem;
+    color: #555454;
+  }
+  
+  .formmenu-button::after {
+    content: attr(title);
+    position: absolute;
+    left: calc(100% + 20px);
+    bottom: 50%;
+    transform: translateY(50%);
+    background-color: #333;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .formmenu-button:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  

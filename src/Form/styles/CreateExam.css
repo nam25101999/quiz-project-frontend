@@ -1,0 +1,308 @@
+
+.create_exam {
+  width: 61%;
+  margin: 0 auto;
+  height: 100vh;
+  margin-top: 10px;
+}
+
+.title_create {
+  border-radius: 10px;
+  background-color: #0004ff;
+  box-shadow: 0 0 8px rgba(114, 114, 114, 0.5);
+  
+}
+.hihi{
+  height: 10px;
+  width: 100%;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  background-color: var(--primary-color);
+}
+
+.input-create {
+  margin: 0 0 0 6px;
+  background-color: var(--while-color);
+  padding: 5px 20px;
+  border-bottom-right-radius:10px ;
+}
+
+.title-input {
+  margin-top: 15px;
+  background-color: var(--while-color);
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  border-bottom:1px solid var(--primary-color-rgba)  ;
+}
+.title-input:focus {
+  border: none;
+  border-bottom:2px solid var(--primary-color)  ;
+}
+.format-buttons {
+  margin-top: 10px;
+}
+
+.format-buttons button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.format-buttons button:hover {
+  color: #ff6347;
+}
+
+.format-buttons button.active {
+  color: #ff6347;
+}
+
+.format-buttons button:last-child {
+  font-size: 16px;
+  color: #888;
+  margin-left: 15px;
+}
+
+.format-buttons button:last-child:hover {
+  color: #333;
+}
+.describe_create{
+  margin-top: 10px;
+}
+.description-input {
+  margin-bottom: 5px;
+}
+
+.description-textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom:1px solid var(--primary-color-rgba);
+  margin-bottom: 10px;
+}
+
+.description-textarea:focus {
+  border: none;
+  border-bottom:2px solid var(--primary-color)  ;
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+.question_form{
+  background-color:#0004ff ;
+  border-radius: 10px;
+}
+.question-container {
+  margin: 15px 0 15px 6px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--while-color);
+  
+}
+.question_input{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.question-text-container,
+.question-image-container,
+.question-type-container {
+  margin-bottom: 10px;
+}
+.question-text-container{
+  width: 75%;
+}
+.question-text-container-input {
+  width: 100%;
+  height: 60px;
+  background-color: #ebe9e9;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  border-bottom:  1px solid var(--primary-color-rgba);
+}
+.question-text-container-input:hover{
+  background-color: #d6d2d2;
+}
+.question-text-container-input:focus{
+  border: none;
+  outline: none;
+  border-bottom:  2px solid var(--primary-color);
+  
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.question-image-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.question-image-container label {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.question-type-container{
+  width: 35%;
+  height: 60px;
+}
+.question-type-container select {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  border-color:var(--primary-color-rgba) ;
+  padding: 10px;
+}
+
+.question-image-container label {
+  display: flex;
+  align-items: center;
+}
+
+.question-image-container input[type="file"]::file-selector-button {
+  margin-left: 10px;
+}
+
+.question-container h3 {
+  margin-bottom: 10px;
+}
+.answer{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
+.add-answerf{
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: var(--primary-color-rgba);
+  margin: 0 2px;
+}
+.add-answer{
+  font-size: 1.4rem;
+}
+.add-answerf:hover{
+  border-bottom: 1px solid var(--primary-color-rgba);
+  padding: 5px 0;
+}
+.add-answerl{
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: #4c4ffd;
+  margin: 0 2px;
+}
+.answer_input{
+  width: 100%;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 0;
+}
+.answer_input:hover{
+  border-bottom: 1px solid var(--primary-color-rgba);
+}
+
+.answer_input:focus{
+  outline: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.button_remove{
+  display: flex;
+  margin: 0 5px;
+  color: var(--black-color);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.remove-icon{
+  width: 20px;
+  height: 20px;
+}
+.button_remove:hover{
+  background-color: var(--primary-color-rgba);
+}
+
+.footer_question{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-top: 30px;
+  height: 50px;
+  width: 100%;
+  border-top:1px solid var(--primary-color-rgba) ;
+}
+.footer-icons{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+.footer-icons-item{
+  font-size: 2rem;
+}
+.toggle-switch {
+  position: relative;
+}
+
+.toggle-switch input {
+  display: none; /* Ẩn checkbox mặc định */
+}
+
+.toggle-switch label {
+  display: block;
+  width: 50px; /* Chiều rộng của thanh gạt nhỏ hơn */
+  height: 15px; /* Chiều cao của thanh gạt nhỏ hơn */
+  background-color: #ccc; /* Màu nền khi chưa chọn */
+  border-radius: 50px; /* Hình dáng tròn cho thanh gạt */
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+  padding: 2px; /* Đảm bảo thanh gạt có không gian để căn giữa nút */
+}
+
+.toggle-switch label:before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch input:checked + label {
+  background-color: var(--primary-color) /* Màu nền khi gạt sang phải */
+}
+
+.toggle-switch input:checked + label:before {
+  transform: translateX(25px) translateY(-50%); /* Di chuyển nút tròn sang phải khi checked */
+} 
+

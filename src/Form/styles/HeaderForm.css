@@ -1,0 +1,113 @@
+.header-form {
+  width: 100%;
+  background-color: var(--while-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo_form-header {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-form .title-header {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.header-form .title-header input {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: transparent;
+  width: auto;
+  min-width: 6ch;
+  white-space: nowrap;
+  transition: width 0.3s ease;
+}
+
+.header-form .title-header .underline {
+  position: absolute;
+  height: 2px;
+  background-color: #007bff; /* Màu của gạch chân */
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.send {
+  width: 100px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.send:hover {
+  background-color: #45a049;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff6347; /* Màu khi hover */
+}
+.icon_cham{
+  margin-right: 80px;
+}
